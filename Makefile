@@ -3,7 +3,7 @@
 CCX64	=	x86_64-w64-mingw32-gcc
 LDX64	= 	x86_64-w64-mingw32-ld
 
-CFLAGS	=  -w -Os -s -m64 -masm=intel -fno-builtin -fno-jump-tables 
+CFLAGS	=  -w -Os -s -m64 -masm=intel -fno-builtin -fno-jump-tables -Wno-int-conversion -Wno-incompatible-pointer-types
 
 TEMP_PATH	= Bin/temp
 

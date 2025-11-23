@@ -157,11 +157,16 @@ beacon> help runpe
 
 ## Compilation
 
-Requires GCC 13 (mingw-w64). Use provided Dockerfile:
+With Dockerfile:
 
-```
-docker build -t ubuntu-gcc-13 .
+```bash
+sudo docker build -t ubuntu-gcc-13 .
 sudo docker run --rm -it -v "$PWD":/work -w /work ubuntu-gcc-13:latest make
+ ```
+
+Or, if you have nasm, make, and mingw-w64 (compatible with gcc-14) on your system
+```
+make
 ```
 
 
